@@ -1,0 +1,110 @@
+
+user@sangam MINGW64 ~
+$ mkdir Exercise_01_Solution
+
+user@sangam MINGW64 ~
+$ cd Exercise_01_Solution
+
+user@sangam MINGW64 ~/Exercise_01_Solution
+$ git init
+Initialized empty Git repository in C:/Users/user/AppData/Roaming/SPB_Data/Exercise_01_Solution/.git/
+
+user@sangam MINGW64 ~/Exercise_01_Solution (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+user@sangam MINGW64 ~/Exercise_01_Solution (master)
+$ git add Data.txt
+fatal: pathspec 'Data.txt' did not match any files
+
+user@sangam MINGW64 ~/Exercise_01_Solution (master)
+$ git add Data.txt
+
+user@sangam MINGW64 ~/Exercise_01_Solution (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Data.txt
+
+
+user@sangam MINGW64 ~/Exercise_01_Solution (master)
+$ git commit -m "Text file named Data which contains Name, matriculation number and Email is added to repository"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'user@sangam.(none)')
+
+user@sangam MINGW64 ~/Exercise_01_Solution (master)
+$  git config --global user.email "reddybabu.sangam@stud.th-de"
+
+user@sangam MINGW64 ~/Exercise_01_Solution (master)
+$ git config --global user.name "Your Name"
+
+user@sangam MINGW64 ~/Exercise_01_Solution (master)
+$ git config --global user.name "Your Name"
+
+user@sangam MINGW64 ~/Exercise_01_Solution (master)
+$ git config --global user.name "Sangam Reddybabu"
+
+user@sangam MINGW64 ~/Exercise_01_Solution (master)
+$ $ git commit -m "Text file named Data which contains Name, matriculation number and Email is added to repository"
+bash: $: command not found
+
+user@sangam MINGW64 ~/Exercise_01_Solution (master)
+$ git commit -m "Text file named Data which contains Name, matriculation number and Email is added to repository"
+[master (root-commit) 17afdea] Text file named Data which contains Name, matriculation number and Email is added to repository
+ 1 file changed, 5 insertions(+)
+ create mode 100644 Data.txt
+
+user@sangam MINGW64 ~/Exercise_01_Solution (master)
+$ touch .gitignore
+
+user@sangam MINGW64 ~/Exercise_01_Solution (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+user@sangam MINGW64 ~/Exercise_01_Solution (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        verification.docx
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+user@sangam MINGW64 ~/Exercise_01_Solution (master)
+$ git add .gitignore
+
+user@sangam MINGW64 ~/Exercise_01_Solution (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        verification.docx
